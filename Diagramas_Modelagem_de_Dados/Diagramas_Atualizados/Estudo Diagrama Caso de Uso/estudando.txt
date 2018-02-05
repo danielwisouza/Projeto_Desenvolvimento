@@ -1,0 +1,6 @@
+Diagrama de Caso de Uso
+
+. descrever a funcionalidade do projeto 
+. contem informações de suma relevancia para programação
+
+
