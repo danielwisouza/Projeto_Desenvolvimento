@@ -47,7 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
@@ -56,12 +55,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.funcionariosTableAdapter = new NewSoft_SolucaosInovadoras.PadariaDataSetTableAdapters.funcionariosTableAdapter();
             this.clienteTableAdapter = new NewSoft_SolucaosInovadoras.PadariaDataSetTableAdapters.ClienteTableAdapter();
-            this.produtoTableAdapter = new NewSoft_SolucaosInovadoras.PadariaDataSetTableAdapters.produtoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.caixaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.padariaDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -239,11 +236,6 @@
             this.groupBox1.Text = "Fluxo de Caixa";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // produtoBindingSource
-            // 
-            this.produtoBindingSource.DataMember = "produto";
-            this.produtoBindingSource.DataSource = this.padariaDataSet;
-            // 
             // comboBox2
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.caixaBindingSource, "cli_nm", true));
@@ -308,10 +300,6 @@
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
             // 
-            // produtoTableAdapter
-            // 
-            this.produtoTableAdapter.ClearBeforeFill = true;
-            // 
             // caixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,7 +318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.padariaDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -364,7 +351,5 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private PadariaDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
-        private System.Windows.Forms.BindingSource produtoBindingSource;
-        private PadariaDataSetTableAdapters.produtoTableAdapter produtoTableAdapter;
     }
 }

@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BF64F42-AC1F-4857-8D95-A0AAAF57B23A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewSoft_SolucaosInovadoras</RootNamespace>
+    <AssemblyName>NewSoft_SolucaosInovadoras</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>d41d8cd98f00b204e9800998ecf8427e.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>073FF56FAED354ABADA38A50ED8F3EDAC9D19E76</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NewSoft_SolucaosInovadoras_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NewSoft_SolucaosInovadoras.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajuda.Designer.cs">
+      <DependentUpon>ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajudabackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajudabackup.Designer.cs">
+      <DependentUpon>ajudabackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajudacadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajudacadastros.Designer.cs">
+      <DependentUpon>ajudacadastros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajudapesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajudapesquisa.Designer.cs">
+      <DependentUpon>ajudapesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajudasistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajudasistema.Designer.cs">
+      <DependentUpon>ajudasistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar_funcionario.Designer.cs">
+      <DependentUpon>Cadastrar_funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caixa.Designer.cs">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="PadariaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_estoque.Designer.cs">
+      <DependentUpon>Pesquisa_estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisa_preco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesquisa_preco.Designer.cs">
+      <DependentUpon>pesquisa_preco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisa_relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesquisa_relatorio.Designer.cs">
+      <DependentUpon>pesquisa_relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio1.Designer.cs">
+      <DependentUpon>Relatorio1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro_fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro_fornecedor.Designer.cs">
+      <DependentUpon>Cadastro_fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encomenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encomenda.Designer.cs">
+      <DependentUpon>Encomenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash1.Designer.cs">
+      <DependentUpon>splash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_backup.Designer.cs">
+      <DependentUpon>tela_backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisa_funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesquisa_funcionario.Designer.cs">
+      <DependentUpon>pesquisa_funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_cliente.Designer.cs">
+      <DependentUpon>Pesquisa_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro_produto.Designer.cs">
+      <DependentUpon>Cadastro_produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_principal.Designer.cs">
+      <DependentUpon>tela_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="preço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preço.Designer.cs">
+      <DependentUpon>preço.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro_cliente.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cadastro_cliente.Designer.cs">
+      <DependentUpon>Cadastro_cliente.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estoque.Designer.cs">
+      <DependentUpon>estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_caixa.Designer.cs">
+      <DependentUpon>Pesquisa_caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_de_Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_de_Fornecedor.Designer.cs">
+      <DependentUpon>Pesquisa_de_Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_de_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_de_Produto.Designer.cs">
+      <DependentUpon>Pesquisa_de_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_encomenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_encomenda.Designer.cs">
+      <DependentUpon>Pesquisa_encomenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validacao.cs" />
+    <EmbeddedResource Include="ajuda.resx">
+      <DependentUpon>ajuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajudabackup.resx">
+      <DependentUpon>ajudabackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajudacadastros.resx">
+      <DependentUpon>ajudacadastros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajudapesquisa.resx">
+      <DependentUpon>ajudapesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajudasistema.resx">
+      <DependentUpon>ajudasistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar_funcionario.resx">
+      <DependentUpon>Cadastrar_funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caixa.resx">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisa_estoque.resx">
+      <DependentUpon>Pesquisa_estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisa_preco.resx">
+      <DependentUpon>pesquisa_preco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisa_relatorio.resx">
+      <DependentUpon>pesquisa_relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio1.resx">
+      <DependentUpon>Relatorio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro_fornecedor.resx">
+      <DependentUpon>Cadastro_fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomenda.resx">
+      <DependentUpon>Encomenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash1.resx">
+      <DependentUpon>splash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_backup.resx">
+      <DependentUpon>tela_backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisa_funcionario.resx">
+      <DependentUpon>pesquisa_funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_cliente.resx">
+      <DependentUpon>Pesquisa_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro_produto.resx">
+      <DependentUpon>Cadastro_produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_principal.resx">
+      <DependentUpon>tela_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="preço.resx">
+      <DependentUpon>preço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro_cliente.resx">
+      <DependentUpon>Cadastro_cliente.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estoque.resx">
+      <DependentUpon>estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_caixa.resx">
+      <DependentUpon>Pesquisa_caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_de_Fornecedor.resx">
+      <DependentUpon>Pesquisa_de_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_de_Produto.resx">
+      <DependentUpon>Pesquisa_de_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_encomenda.resx">
+      <DependentUpon>Pesquisa_encomenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="NewSoft_SolucaosInovadoras_TemporaryKey.pfx" />
+    <None Include="PadariaDataSet.xsc">
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PadariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PadariaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PadariaDataSet.xss">
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="d41d8cd98f00b204e9800998ecf8427e.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

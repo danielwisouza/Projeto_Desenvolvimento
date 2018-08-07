@@ -39,7 +39,7 @@ namespace NewSoft_SolucaosInovadoras
                 MessageBox.Show("Compra registrada com sucesso", "Parabéns", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 //limpar tela
-                
+                textBox1.Text = " ";
                 textBox4.Text = " ";
                 richTextBox1.Text = " ";
                 comboBox1.Text = " ";
@@ -50,7 +50,7 @@ namespace NewSoft_SolucaosInovadoras
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            textBox1.Text = " ";
             comboBox1.Text = " ";
             textBox4.Text = " ";
             richTextBox1.Text = " ";
@@ -79,8 +79,6 @@ namespace NewSoft_SolucaosInovadoras
 
         private void caixa_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'padariaDataSet.produto' table. You can move, or remove it, as needed.
-            this.produtoTableAdapter.Fill(this.padariaDataSet.produto);
             // TODO: This line of code loads data into the 'padariaDataSet.Cliente' table. You can move, or remove it, as needed.
             this.clienteTableAdapter.Fill(this.padariaDataSet.Cliente);
             // TODO: This line of code loads data into the 'padariaDataSet.funcionarios' table. You can move, or remove it, as needed.
